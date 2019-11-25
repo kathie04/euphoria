@@ -1,0 +1,222 @@
+.section-account {
+  background: linear-gradient(180deg, #4DBDCC 0%, #3AA6B5 100%);
+  h2 {
+    color: #FFE286;
+    font-size: 50px;
+  }
+  .container-account {
+    max-width: 1460px;
+    margin: 0 auto;
+  }
+  p {
+    font-size: 0.85rem;
+    line-height: 1.47;
+    margin-bottom: 80px;
+    padding: 0 10px;
+  }
+  &.triangle:before, &.triangle:after {
+    background: #4DBDCC;
+  }
+
+}
+
+.triangle {
+  position: relative;
+  &:before, &:after {
+    content: '';
+    display: block;
+    height: 85px;
+    position: absolute;
+    width: calc(50% + 10px);
+  }
+  &-up {
+    &:before, &:after {
+      top: -85px;
+    }
+  }
+  &-down {
+    &:before, &:after {
+      bottom: 0;
+    }
+  }
+  &:before {
+    left: 0;
+    border-top-right-radius: 63px;
+  }
+  &:after {
+    right: 0;
+    border-top-left-radius: 63px;
+  }
+}
+
+
+.section-preferences {
+  background: url("../images/section2-bg.jpg") 50% 50% no-repeat;
+  background-size: cover;
+  padding: 80px 0;
+  min-height: 100vh;
+  &.triangle:before, &.triangle:after {
+    background: #fff;
+  }
+  &.triangle:before {
+    width: 18.5%;
+  }
+  &.triangle:after {
+    width: 82.5%;
+  }
+  h2 {
+    margin-bottom: 30px;
+  }
+  p {
+    font-size: 0.8rem;
+    line-height: 1.69;
+    color: rgba(30, 31, 35, 0.8);
+    margin-bottom: 55px;
+  }
+}
+
+.download-title {
+  font-size: 1.3rem;
+  line-height: 1.04;
+  font-weight: 500;
+  margin: 25px 0 50px;
+  font-family: 'Rubik';
+}
+
+.download-buttons {
+  justify-content: space-between;
+  max-width: 350px;
+  margin: 0 auto;
+  .btn-floating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+    background: #4F547B;
+    margin-bottom: 15px;
+  }
+}
+
+.section-platforms {
+  overflow: hidden;
+  position: relative;
+  .bottom-gradient {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 40px;
+    height: 136px;
+    background: linear-gradient(0.45deg, #D2D2D2 -5.51%, rgba(255, 255, 255, 0) 72.26%);
+  }
+  h2 {
+    margin-bottom: 96px;
+  }
+}
+
+.image-container {
+  position: relative;
+  padding-left: 36px;
+  margin: -14px 114px 163px 7px;
+  img {
+    width: 100%;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 50px;
+    width: 23vw;
+    background: url("../images/device-image1.png") 50% 50% repeat-x;
+    left: -17vw;
+    top: 61%;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 99px;
+    width: 470px;
+    background: url("../images/device-image2.png") 50% 50% no-repeat;
+    top: 29%;
+    right: -444px;
+  }
+}
+
+.circle-block {
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  &.big {
+    background: url("../images/border-blue.png") 50% 50% no-repeat;
+    background-size: contain;
+    top: -282px;
+    left: -10px;
+    width: 31%;
+    height: 352px;
+    min-width: 286px;
+    .content {
+      padding-top: 70px;
+    }
+  }
+  h5 {
+    font-size: 1.4rem;
+    line-height: 1.2;
+    font-family: Montserrat;
+  }
+  &.small {
+    background: url("../images/border-red.png") 50% 50% no-repeat;
+    width: 280px;
+    height: 280px;
+    margin-left: auto;
+    background-size: contain;
+    top: -104px;
+    right: -93px;
+    min-width: 224px;
+    .content {
+      P {
+        line-height: 1.5;
+        margin-top: 0;
+      }
+    }
+  }
+  .content {
+    border-radius: 50%;
+    height: 100%;
+    padding: 60px 20px 0;
+    p {
+      font-size: 0.7rem;
+      line-height: 1.9;
+    }
+  }
+}
+
+.color-block {
+  &.color-block-left {
+    padding: 75px 45px 0 60px;
+  }
+  &.color-block-right {
+    max-width: 264px;
+    margin: 0 auto;
+  }
+  h5 {
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 1.1rem;
+    line-height: 1.37;
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    &.text-blue {
+      color: #2FB6C6;
+    }
+    &.text-red {
+      color: #EC7777;
+    }
+  }
+  p {
+    margin-top: 0;
+    font-size: 0.7rem;
+    line-height: 1.8;
+  }
+}

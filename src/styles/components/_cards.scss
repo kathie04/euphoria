@@ -1,0 +1,126 @@
+
+.card-account {
+  box-shadow: none;
+  padding: 55px 35px 20px;
+  //position: absolute;
+  //width: calc(100% - 30px);
+  left: 50%;
+  transform: translate(-50%);
+  top: 0;
+  &:after {
+    content: '';
+    display: block;
+    height: 76px;
+    background: url("../images/decorate.png") bottom center no-repeat;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    background-size: 100%;
+    z-index: 100;
+  }
+  .card-title {
+    color: #4F4E4E;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 0.88;
+    display: block;
+    margin-bottom: 28px;
+  }
+  .card-image {
+    margin-bottom: 15px;
+  }
+  .card-image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 0 5px;
+    border-top: 0.5px solid #fff;
+    border-bottom: 0.5px solid #fff;
+    width: 80%;
+  }
+  .card-price {
+    font-size: 27px;
+    line-height: 1;
+    font-weight: 500;
+    display: block;
+  }
+  .card-info {
+    font-size: 0.6rem;
+    line-height: 0.89;
+  }
+  .card-content, .card-action {
+    padding: 0;
+  }
+  .card-content {
+    display: none;
+    font-size: 0.85rem;
+    line-height: 1.16;
+    color: #4F4E4E;
+    padding-bottom: 10px;
+    margin-top: 15px;
+    li {
+      margin-bottom: 20px;
+    }
+  }
+  .card-action {
+    border-top: 0;
+    .btn {
+      font-size: 0.8rem;
+    }
+  }
+  &.hover {
+    position: absolute;
+    width: calc(100% - 30px);
+    z-index: 1000;
+    .card-title {
+      color: #44A3B4;
+    }
+  }
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 340px;
+    z-index: -1;
+  }
+}
+
+.row-cards .col {
+  position: relative;
+  margin-bottom: 234px;
+  min-height: 385px;
+}
+
+.row-cards .col:first-child .card-account:before {
+  background: url("../images/line1.svg") top center no-repeat;
+  background-size: contain;
+  top: -228px;
+  left: 40%;
+  width: 100%;
+}
+
+.row-cards .col:nth-child(2) .card-account:before {
+  background: url("../images/line2.svg") top center no-repeat;
+  top: -228px;
+  left: 30%;
+  width: 3px;
+}
+
+.row-cards .col:nth-child(3) .card-account:before {
+  background: url("../images/line2.svg") top center repeat-y;
+  top: -228px;
+  right: 38%;
+  width: 3px;
+}
+
+.row-cards .col:nth-child(4) .card-account:before {
+  background: url("../images/line3.svg") top center no-repeat;
+  background-size: contain;
+  top: -228px;
+  right: 47%;
+  width: 100%;
+
+}

@@ -1,0 +1,41 @@
+.header nav {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 64px;
+  line-height: 64px;
+  .brand-logo {
+    padding: 13px 0 0 17px;
+  }
+  ul {
+    padding-top: 20px;
+    width: 59%;
+    display: flex;
+    justify-content: space-between;
+    a {
+      font-size: 0.85rem;  font-family: 'Roboto';
+      white-space: nowrap;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  .sidenav-close {
+    display: none;
+  }
+  &.open-mobile-menu {
+    .sidenav-close {
+      display: block;
+    }
+    .sidenav-trigger {
+      display: none;
+    }
+  }
+  i.material-icons {
+    font-size: 34px;
+  }
+}

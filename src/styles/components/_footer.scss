@@ -1,0 +1,33 @@
+.page-footer {
+  background: #3A3E58;
+  padding-top: 115px;
+  .footer-copyright {
+    background: #3A3E58;
+    border-top: 0.5px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.63);
+    font-size: 13px;
+    line-height: 1.23;
+    margin-top: 100px;
+    padding: 50px 0;
+  }
+  .flex-button-block {
+    justify-content: center;
+  }
+  .brand-logo svg {
+    width: 278px;
+    height: 36px;
+  }
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0 70px;
+  max-width: 720px;
+  margin: 0 auto;
+  a {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
