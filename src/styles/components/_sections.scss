@@ -118,7 +118,7 @@
 .image-container {
   position: relative;
   padding-left: 36px;
-  margin: -14px 114px 163px 7px;
+  margin: -10px 114px 163px 7px;
   img {
     width: 100%;
   }
@@ -161,9 +161,10 @@
     }
   }
   h5 {
-    font-size: 1.4rem;
-    line-height: 1.2;
+    font-size: 1.5rem;
+    line-height: 1.23;
     font-family: Montserrat;
+    margin-bottom: 10px;
   }
   &.small {
     background: url("../images/border-red.png") 50% 50% no-repeat;
@@ -184,17 +185,18 @@
   .content {
     border-radius: 50%;
     height: 100%;
-    padding: 60px 20px 0;
+    padding: 50px 10px 0;
     p {
-      font-size: 0.7rem;
-      line-height: 1.9;
+      font-size: 0.8rem;
+      line-height: 1.5;
+      font-weight: 300;
     }
   }
 }
 
 .color-block {
   &.color-block-left {
-    padding: 75px 45px 0 60px;
+    padding: 70px 45px 0 60px;
   }
   &.color-block-right {
     max-width: 264px;
@@ -203,10 +205,10 @@
   h5 {
     text-transform: uppercase;
     font-family: Montserrat;
-    font-size: 1.1rem;
-    line-height: 1.37;
+    font-size: 1.2rem;
+    line-height: 1.08;
     font-weight: 300;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
     letter-spacing: 1px;
     &.text-blue {
       color: #2FB6C6;
@@ -217,7 +219,8 @@
   }
   p {
     margin-top: 0;
-    font-size: 0.7rem;
-    line-height: 1.8;
+    font-size: 0.8rem;
+    line-height: 1.56;
+    font-weight: 300;
   }
 }

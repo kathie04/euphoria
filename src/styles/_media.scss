@@ -1,3 +1,9 @@
+@media screen and (max-width: 1550px) {
+  .circle-block.small {
+    top: -115px;
+    right: -100px;
+  }
+}
 
 @media screen and (max-width: 1366px) {
   .container {
@@ -66,7 +72,7 @@
       top: -79px;
       right: -74px;
       .content {
-        padding-top: 35px;
+        padding-top: 25px;
       }
     }
   }
@@ -313,7 +319,7 @@
     }
   }
   .image-container {
-    margin: 0 0 108px -6%;
+    margin: 0 0 108px -18px;
     padding: 0;
   }
   .color-block {
@@ -378,25 +384,8 @@
       }
     }
   }
-  .triangle:after, .triangle:before {
-    height: 55px;
-    top: -55px;
-    width: calc(50% + 20px);
-  }
-  .triangle:after {
-    border-top-left-radius: 50px;
-  }
-  .triangle:before {
-    border-top-right-radius: 50px;
-  }
   .section-preferences {
     padding-top: 4px;
-    &.triangle:before {
-      width: 59%;
-    }
-    &.triangle:after {
-      width: 53%;
-    }
     h2 {
       margin-bottom: 10px;
     }
@@ -492,4 +481,30 @@
       }
     }
   }
-};
+}
+
+@media screen and (max-width: 400px) {
+  .triangle:after, .triangle:before {
+    height: 55px;
+    top: -55px;
+    width: calc(50% + 20px);
+  }
+  .triangle:after {
+    border-top-left-radius: 50px;
+  }
+  .triangle:before {
+    border-top-right-radius: 50px;
+  }
+  .section-preferences {
+    &.triangle:before {
+      width: 59%;
+    }
+    &.triangle:after {
+      width: 53%;
+    }
+  }
+  .triangle-down:after, .triangle-down:before {
+    top: auto;
+
+  }
+}
