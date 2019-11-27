@@ -212,13 +212,15 @@
     }
     & > li {
       &:hover {
-        background: #57C0AD;
         a {
           font-weight: 500;
         }
       }
       &:not(:last-child) {
         border-bottom: 1px solid #57C0AD;
+        &:hover {
+          background: #57C0AD;
+        }
       }
       &.button-block {
         padding-top: 60px;
